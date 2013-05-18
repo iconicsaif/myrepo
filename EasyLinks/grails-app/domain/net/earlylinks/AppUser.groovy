@@ -18,8 +18,8 @@ class AppUser {
     String securityAnswer;
     Boolean isActive=false;
 
-    static hasOne = [profile:UserProfile]
-    static hasMany = [authorities : Authority, userGroups : UserGroup]
+//    static hasOne = [profile:UserProfile]
+//    static hasMany = [authorities : Authority, userGroups : UserGroup]
 
     /* static searchable = {
          profile component: true
@@ -31,11 +31,10 @@ class AppUser {
     }
 
     static constraints = {
-        userName(blank:false, size:3..100,unique:true);
-        password(blank:false, size:4..100);
-        profile(nullable: true);
-        authorities(nullable: true);
-        userGroups(nullable: true);
+        userName(nullable: true);
+        password(nullable: true);
+        securityQuestion(nullable: true);
+        securityAnswer(nullable: true);
     }
 
 

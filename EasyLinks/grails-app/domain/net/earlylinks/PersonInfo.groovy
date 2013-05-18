@@ -23,8 +23,8 @@ class PersonInfo {
     Date updated;
     Date created=new Date();
 
-    static hasOne = [identification:Identification];
-    static belongsTo = [user:User,address:Address];
+//    static hasOne = [identification:Identification];
+//    static belongsTo = [user:User,address:Address];
 
     /* static searchable = {
          address component: true
